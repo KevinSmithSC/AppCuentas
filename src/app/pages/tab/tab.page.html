@@ -1,13 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>tab</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab()">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon [name]="selectedTab == 'home' ? 'home' : 'home-outline'"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="Grafico">
+      <ion-icon [name]="selectedTab == 'Grafico' ? 'pie-chart-outline' : 'pie-chart-outline'"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="Ingresos">
+      <ion-icon [name]="selectedTab == 'Ingresos' ? 'swap-vertical-outline' : 'swap-vertical-outline'"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="settings">
+      <ion-icon [name]="selectedTab == 'settings' ? 'settings' : 'settings-outline'"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
