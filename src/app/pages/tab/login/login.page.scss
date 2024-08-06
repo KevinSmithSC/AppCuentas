@@ -1,0 +1,38 @@
+.fondo{
+    --background: #050306;
+}
+
+ion-content {
+    .login-text {
+        color: white;
+        padding: 20px;
+        margin: 33px;
+        text-align: center;
+        font-size: 2.5rem;
+        /* Ajusta el tamaño de la fuente aquí */
+        font-weight: bold;
+        /* Opcional: hace el texto más negrita */
+    }
+
+    .login-logo {
+        display: block;
+        margin: 0 auto;
+        /* Centra la imagen horizontalmente */
+        width: 250px;
+        /* Ajusta el tamaño de la imagen */
+        height: auto;
+        /* Mantén la proporción de la imagen */
+    }
+
+    .content {
+        margin: 15px auto;
+        /* Opcional: margen automático para centrar el div */
+        max-width: 350px;
+        /* Opcional: ancho máximo del div */
+    }
+
+    app-custom-input {
+        margin: 10px;
+        border-radius: 5cm;
+    }
+}

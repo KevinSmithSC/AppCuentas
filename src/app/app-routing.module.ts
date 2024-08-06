@@ -9,6 +9,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'login',
+    loadChildren: () => import('./pages/tab/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: 'tab',
     loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
   }
