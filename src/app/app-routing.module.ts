@@ -22,6 +22,18 @@ const routes: Routes = [
     path: 'grafico',
     loadChildren: () => import('./grafico/grafico.module').then( m => m.GraficoPageModule)
   },
+  {
+    path: 'tab',
+    loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
 
 ];
 
