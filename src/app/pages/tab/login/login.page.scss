@@ -1,38 +1,58 @@
-.fondo{
-    --background: #050306;
+.fondo {
+  --background: #050306;
 }
 
 ion-content {
-    .login-text {
-        color: white;
-        padding: 20px;
-        margin: 33px;
-        text-align: center;
-        font-size: 2.5rem;
-        /* Ajusta el tamaño de la fuente aquí */
-        font-weight: bold;
-        /* Opcional: hace el texto más negrita */
-    }
+    --color:white;
 
-    .login-logo {
-        display: block;
-        margin: 0 auto;
-        /* Centra la imagen horizontalmente */
-        width: 250px;
-        /* Ajusta el tamaño de la imagen */
-        height: auto;
-        /* Mantén la proporción de la imagen */
-    }
+  .login-text {
+    color: white;
+    padding: 20px;
+    margin: 33px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
 
-    .content {
-        margin: 15px auto;
-        /* Opcional: margen automático para centrar el div */
-        max-width: 350px;
-        /* Opcional: ancho máximo del div */
-    }
+  .login-logo {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+  }
 
-    app-custom-input {
-        margin: 10px;
-        border-radius: 5cm;
-    }
+  .content {
+    margin: 15px auto;
+    max-width: 350px;
+  }
+
+  app-custom-input {
+    margin: 10px;
+    border-radius: 5px; /* Usa px o em en lugar de cm */
+  }
+
+  form {
+    text-align: center;
+    align-items: center;
+  }
+
+  ion-button.iniciar {
+    --background: #F9D16B;
+    --color: black;
+    width: 150px; /* Ajusta el ancho del botón */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+  }
+
+  ion-button.registrar {
+    --background: #F9D16B;
+    --color: black;
+    width: 150px; /* Ajusta el ancho del botón */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+  }
+
+  .error-message {
+    color: white;
+    text-align: center;
+  }
+
 }
