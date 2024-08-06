@@ -10,11 +10,11 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./pages/tab/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'tab',
-    loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
+    path: 'main',
+    loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule)
   }
 ];
 

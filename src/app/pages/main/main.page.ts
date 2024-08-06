@@ -2,13 +2,13 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonTabs } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tab',
-  templateUrl: './tab.page.html',
-  styleUrls: ['./tab.page.scss'],
+  selector: 'app-main',
+  templateUrl: './main.page.html',
+  styleUrls: ['./main.page.scss'],
 })
-export class TabPage implements OnInit {
+export class MainPage implements OnInit {
 
-  @ViewChild('tab', {static: false}) tab!: IonTabs;
+  @ViewChild('main', {static: false}) main: IonTabs;
   selectedTab: any;
 
   constructor() { }
@@ -17,7 +17,7 @@ export class TabPage implements OnInit {
   }
 
   setCurrentTab() {
-    this.selectedTab = this.tab.getSelected();
+    this.selectedTab = this.main.getSelected();
     console.log(this.selectedTab);
   }
   

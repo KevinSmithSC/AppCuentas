@@ -1,0 +1,16 @@
+<ion-tabs class="fondo" #main (ionTabsDidChange)="setCurrentTab()">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="inicio">
+      <ion-icon [name]="selectedTab == 'inicio' ? 'home' : 'home-outline'"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="graficos">
+      <ion-icon [name]="selectedTab == 'graficos' ? 'pie-chart' : 'pie-chart-outline'"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="datos">
+      <ion-icon [name]="selectedTab == 'datos' ? 'swap-vertical' : 'swap-vertical-outline'"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="ajustes">
+      <ion-icon [name]="selectedTab == 'ajustes' ? 'settings' : 'settings-outline'"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
