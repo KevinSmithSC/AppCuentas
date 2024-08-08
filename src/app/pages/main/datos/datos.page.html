@@ -1,9 +1,40 @@
 <ion-content class="fondo">
   <div class="content">
-    <h2 class="saldo">Saldo Actual</h2>
-    <div *ngIf="">11111111111</div>
-    <div>
-      
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Saldo Actual</ion-card-title>
+        <ion-card-subtitle>$100</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+
+    <ion-segment [(ngModel)] = "segmento" (ionChange) = "segmentoCambiado()">
+      <ion-segment-button value ="Ingresos">
+         <ion-label>Ingresos</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value ="Egresos">
+        <ion-label>Gastos</ion-label>
+     </ion-segment-button>
+
+     <div *ngIf="segmento === 'Ingreso'">
+      <ion-item>
+        <ion-label>Cuánto ganaste?</ion-label>
+        <ion-input type="number" [(ngModel)]="monto"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="agregarIngreso()">Enviar</ion-button>
     </div>
+  
+    <div *ngIf="segmento === 'Gastos'">
+      <ion-item>
+        <ion-label>Cuánto gastaste?</ion-label>
+        <ion-input type="number" [(ngModel)]="monto"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="agregarGasto()">Enviar</ion-button>
+    </div>
+
+    </ion-segment>
+
+  
   </div>
 </ion-content>
